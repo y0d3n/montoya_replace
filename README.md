@@ -1,0 +1,3 @@
+# Replace exteniton
+
+"hoge" -> "fuga"
