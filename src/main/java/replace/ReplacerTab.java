@@ -11,13 +11,13 @@ public class ReplacerTab extends JComponent {
 
         JPanel customTabContent = new JPanel();
 
-        JLabel needleLabel = new JLabel("needle", SwingConstants.LEFT);
+        JLabel needleLabel = new JLabel("needle");
         customTabContent.add(needleLabel);
 
         this.needle = new JTextField(20);
         customTabContent.add(this.needle);
 
-        JLabel replaceLabel = new JLabel("replace", SwingConstants.LEFT);
+        JLabel replaceLabel = new JLabel("replace");
         customTabContent.add(replaceLabel);
 
         this.replace = new JTextField(20);
