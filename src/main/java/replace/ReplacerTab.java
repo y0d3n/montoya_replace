@@ -5,12 +5,12 @@ import javax.swing.*;
 import burp.api.montoya.MontoyaApi;
 
 public class ReplacerTab extends JComponent {
-    public JTextField needle;
-    public JTextField replace;
+    private JTextField needle;
+    private JTextField replace;
 
     public ReplacerTab(MontoyaApi api) {
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
-        
+
         JPanel customTabContent = new JPanel();
 
         JLabel needleLabel = new JLabel("needle", SwingConstants.LEFT);
@@ -26,5 +26,13 @@ public class ReplacerTab extends JComponent {
         customTabContent.add(this.replace);
 
         add(customTabContent);
+    }
+
+    public String getNeedle() {
+        return this.needle.getText();
+    }
+
+    public String getReplace() {
+        return this.replace.getText();
     }
 }
