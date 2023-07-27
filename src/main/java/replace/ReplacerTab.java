@@ -2,13 +2,11 @@ package replace;
 
 import javax.swing.*;
 
-import burp.api.montoya.MontoyaApi;
-
 public class ReplacerTab extends JComponent {
     private JTextField needle;
     private JTextField replace;
 
-    public ReplacerTab(MontoyaApi api) {
+    public ReplacerTab() {
         setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
 
         JPanel customTabContent = new JPanel();

@@ -8,7 +8,7 @@ public class Replace implements BurpExtension {
     public void initialize(MontoyaApi api) {
         api.extension().setName("My Replace extension");
 
-        ReplacerTab replacerTab = new ReplacerTab(api);
+        ReplacerTab replacerTab = new ReplacerTab();
         api.http().registerHttpHandler(new ReplaceHandler(api, replacerTab));
         api.userInterface().registerSuiteTab("montoya_replace", replacerTab);
     }
